@@ -1,0 +1,171 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin-bottom: 0;
+    color: #1D3557;
+}
+
+.hero h2 {
+    font-size: 3.5em;
+    margin-top: 0;
+    color: #007BFF;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+hr {
+    margin-bottom: 50px;
+    border: 2px solid #666;
+}
+
+.call-to-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #1D3557;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #007BFF;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.hero-image h1 {
+    font-size: 2.5em;
+}
+
+.hero-image h2 {
+    font-size: 1.5em;
+}
+
+.hero-image h1,
+.hero-image h2 {
+    margin: 0;
+    line-height: 35px;
+}
+
+.recruitment-process {
+    margin-top: 40px;
+}
+
+.recruitment-process h2 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 30px;
+}
+
+.recruitment-process h2 span {
+    color: #007BFF;
+}
+
+.process-steps {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    background-color: #6670ee;
+}
+
+.step {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.step:hover i {
+    color: #1D3557;
+}
+
+.step i {
+    font-size: 2em;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.step h3 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .hero, .process-steps {
+        flex-direction: column;
+    }
+    
+    .hero-image {
+        margin-top: 20px;
+    }
+    
+    .step {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero, .process-steps {
+        flex-direction: column;
+    }
+    
+    .hero-image {
+        margin-top: 20px;
+    }
+    
+    .step {
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero h2 {
+        font-size: 1.5em;
+    }
+
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .recruitment-process h2 {
+        font-size: 1.5em;
+    }
+}

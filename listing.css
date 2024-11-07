@@ -1,0 +1,208 @@
+
+.listing-header {
+    /* background-color: #f4f4f4; */
+    padding: 1rem 5%;
+}
+
+.listing-header a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main-section {
+    max-width: 900px;
+}
+
+.view-options {
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.property-count {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.property-count select {
+    outline: none;
+    border: none;
+}
+
+.property-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.property-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.property-info h2 {
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.property-info h2:hover {
+    color: #007BFF;
+}
+
+.property-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.property-info {
+    padding: 1rem;
+}
+
+
+.status {
+    background-color: #333;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.status:hover {
+    color: #007BFF;
+}
+
+.property-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f4f4f4;
+}
+
+.details-btn {
+    background-color: #1D3557;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.view-options .list-view i,
+.view-options .grid-view i {
+    background: transparent;
+    color: #807c7c;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hot-offer {
+    background: transparent;
+}
+
+
+/* List view styles */
+.property-listings.list-view {
+    display: block;
+}
+
+.property-card.list-view {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.property-card.list-view img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.property-info.list-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.flex-col {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.view-options {
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 1100px) {
+    .view-options {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .property-listings {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .view-options {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .property-listings {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    main {
+        display: flex;
+        justify-content: center;
+        padding: 2rem 5%;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .view-options {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .subheader {
+        padding: 10px;
+    }
+    .property-listings {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.5rem;
+    }
+}
